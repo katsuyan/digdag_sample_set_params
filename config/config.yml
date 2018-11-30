@@ -1,0 +1,11 @@
+production:
+  db_user: user
+  db_pass: pass
+
+development:
+  db_user: user_dev
+  db_pass: pass_dev
+
+test:
+  db_user: user_dev
+  db_pass: pass_dev

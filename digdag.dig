@@ -1,0 +1,15 @@
+timezone: Asia/Tokyo
+
++set_state:
+  _retry: 3
+  _export:
+    docker:
+      image: ruby:2.5.1
+  rb>: Setup.set_state
+  require: 'tasks/setup'
+
++echo_db_user:
+  echo>: ${db_user}
+
++echo_db_pass:
+  echo>: ${db_pass}
